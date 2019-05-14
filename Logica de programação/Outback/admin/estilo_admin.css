@@ -1,0 +1,71 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.body_container_background {
+  margin: 0px;
+}
+
+.image_background {
+  display: block;
+  background-image: url(./admin3.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 63px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login_area {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  max-width: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-top: 170px;
+}
+
+.login_area .space_login {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px;
+  max-width: 100%;
+  width: 350px;
+  background-color: white;
+}
+
+.login_area .space_login .logo {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: block;
+}
+
+.login_area .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.login_area .login, .login_area .password {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+}
+
+.login_area .text_admin {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=estilo_admin.css.map */

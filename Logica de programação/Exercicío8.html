@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Execicío 8</title>
+    <script>
+        //2
+        var pc = 0.0 , pv = 0.0 , tipo = " " , lucro = 0.0 , contador = 0 , i = 1 , percentual = 0
+        while(i <=2)
+        {
+            pc = parseFloat(prompt("Qual o preço de custo ?"))
+            pv = parseFloat(prompt("Qual o preço de venda ?"))
+            tipo = prompt("V para vestuário e C para calçado.")
+            lucro = pc - pv 
+            document.write("O lucro do produto: " + pc + "</br>" + " foi R$" + lucro)
+            if(tipo == "C"){contador++}
+            i++           
+        } //REVISAR QUESTÃO!!!
+        alert("Total de calçados vendido: " + contador)
+
+        //3
+        var idade = 0 , procedencia = 3 , qtdC = 0 , qtdPAM = 0 ,  i = 1 ;
+        var qtdPE =  parseInt(prompt("Quantida de pessoa entrevistadas: "))
+        
+        while( i <= qtdPE)
+        {
+            idade = parseInt(prompt("Digite a idade: "));
+            procedencia = parseInt(prompt("0 - Capital | 1 - Interior | 2 - Outro estado"));
+            if(procedencia == 0){qtdC++}
+            if(idade >= 18){qtdPAM++}
+            i++
+        } 
+        percentual = (qtdPAM * 100) / (i - 1)
+        alert("A quantidade de pessoas vindas da capital é " + qtdC)
+        alert("O percential de pessoas meiores de idade é " + percentual)
+
+        //5
+         var n1 = parseFloat(prompt("Digite N1"))
+         var n2 = 0
+
+         do
+         {
+            n2 = parseFloat(prompt(" Digite N2"))
+         }
+         while(n2 == 0 );
+         var resultado =n1/n2
+         alert("Resultado: " + resultado)
+
+        //6
+
+        var n = parseInt(prompt("Valor 1"));
+        var r = 1;
+            if(n<0)
+            {
+                alert("Não existe fatorial de nº nagativo!")
+            } else if(n==0){ alert("Resultado: " + r)
+            } else{
+                do {
+                    r = r * n || r * n
+                    n--
+                } 
+                while(n>0)
+                alert("Resultado: " + r)
+            }
+
+        //7
+        for(var i = 1 ; i <= 400 ; i += 2 )
+        {
+            document.write("<li>" + i + "</li>")
+        }
+        document.write("</0l>")
+        
+        //8
+        document.write("<ol>")
+        var numero = parseInt(prompt("Digite um número: "))
+        for(var i = 2 ; i <= 31 ; i++)
+        {
+            document.write("<li>" + numero + "</li>")
+            n--
+        } 
+        document.write("</ol>")
+
+        //9
+        var soma = 0 , contador = 0
+
+        for(var i = 5 ; i <= 10000 ; i += 5)
+        {
+            soma += i //soma = soma + i
+            contador ++
+        }        
+        var media = soma / (contador - 1)
+        alert("Resultado: " + media)
+
+        //10
+
+        var x = 0
+
+        for( var i = 50 ; i<= 1000 ; i += 50)
+        {
+            x += i;
+            console.log(i,x)
+            
+        }
+
+        var y = 0
+
+        for( var j = 1 ; j <= 20 ; j++)
+        {
+            y += (x*j)
+           
+        }
+        var z = y/x
+        alert("Resultado: " + z)
+                
+
+            
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

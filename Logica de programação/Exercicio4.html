@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista de exercício 4</title>
+    <script>
+        // //1
+        var aluno = "Pedro lopes"
+        var aluno = prompt("Nome Do Aluno: ")
+
+        var n1 = 10 
+        var n1 = parseInt(prompt("1º Nota: "))
+
+        var n2 = 5
+        var n2 = parseInt(prompt("2º Nota: ")) 
+
+        var media = (n1 + n2) /2
+        
+        console.log("Aluno: "+ aluno + "</br>" + "Prova 1: " + n1 + "</br>" +
+         "Prova 2: " + n2 + "</br>" + "Média: "+ media + "</br>" + "</br>")
+
+        document.write("Aluno: "+ aluno + "</br>" + "Prova 1: " + n1 + "</br>" +
+         "Prova 2: " + n2 + "</br>" + "Média: " + media + "</br>" + "</br>")
+
+        //2
+        var d1 = 30
+        var d1 = prompt("Digite o primeiro número: ")
+
+        var d2 = 15
+        var d2 = prompt("Digite o segundo número: ")
+
+        var rf = (d1 - d2)
+        var rf2 = (rf * 2)
+        console.log("Primeiro Número: " + d1 + "</br>" + "Segundo Número: " + d2 + "</br>" + 
+        "O dobro da diferença de dois números é igual á: " + rf2 + "</br>")        
+
+        document.write("Primeiro Número: " + d1 + "</br>" + "Segundo Número: " + d2 + "</br>" +
+         "O dobro da diferença de dois números é igual á: " + rf2 + "</br>" + "</br>")  
+
+        //3
+        var a = 100 // Valor de custo
+        var a = parseFloat(prompt("Valor de Custo: "))
+
+        var b = 400 // valor de revenda 
+        var b = parseFloat(prompt("Valor de Venda: "))
+
+        var c = 10 // peças vendidas
+        var c = parseInt(prompt("Peças vendida: "))
+
+        var lucro = (a * b) /c
+        
+        console.log("valor de custo: " + a + "</br>" + "valor de venda: " + b + "</br>" + 
+        "peças vendidas: " + c + "</br>" + "Lucro obtido: " + lucro + "</br>"  + "</br>")
+
+        document.write("valor de custo: " + a + "</br>" + "valor de venda: " + b + "</br>"
+         + "peças vendidas: " + c + "</br>" + "Lucro obtido: " + lucro + "</br>"  + "</br>")
+       
+     
+        //5
+        var corigem = prompt("Cidade De Origem: ")
+
+        var cdestino = prompt("Cidade De Destino: ")
+
+        var distancia = parseFloat(prompt("Distância em Km: "))
+
+        var vm = parseFloat(prompt("Velocidade em Km/h: "))
+
+        var tempo = distancia /vm
+
+        document.write("Cidade de origem: " + corigem + "</br>" + "Cidade de destino: " + cdestino +
+        "</br>" + "Distância: " + distancia + "</br>" + "Velocidade Média: " + vm + "</br>" + 
+        "Tempo estimado: " + tempo + "</br>" + "</br>")
+
+        console.log("Cidade de origem: " + corigem + "</br>" + "Cidade de destino: " + cdestino + 
+        "</br>" + "Distância: " + distancia + "</br>" + "Velocidade Média: " + vm + "</br>" + 
+        "Tempo estimado: " + tempo + "</br>" + "</br>")
+
+        //6
+        var naf = parseInt(prompt("Anos Fumado: "))
+        var cd = parseInt(prompt("Cigarro Fumado Por Dia: "))
+        var pc = parseFloat(prompt("Valor Da Carteira De Cigarro:" ))
+        var diasAno = 365
+
+        var diasF = (naf * diasAno) * pc
+        var dg = diasF
+        var cigarroTotal = (naf * diasAno) * cd
+        
+        console.log("Anos Fumado: " + naf + "</br>" + "Cigarro fumado por dias: " + cd + "</br>" +
+         "Valor da carteira de cigarro: " + pc + "</br>" + "Total gasto com cigarro: " + dg + "</br>" + 
+         "Quantidade de cigarro fumado durante todos esse anos: " + cigarroTotal + "</br>" + "</br>")
+        
+         document.write("Anos Fumado: " + naf + "</br>" + "Cigarro fumado por dias: " + cd + "</br>" +
+         "Valor da carteira de cigarro: " + pc + "</br>" + "Total gasto com cigarro: " + dg + "</br>" + 
+         "Quantidade de cigarro fumado durante todos esse anos: " + cigarroTotal + "</br>" + "</br>")
+        
+        //7
+        var qtnDoce = parseInt(prompt("Quantidade de doces: "))
+        var qntAçucar = qtnDoce * 0.02
+        var qntPacote = qntAçucar /5
+
+        alert("a quantidae de pacotes utilizado foi: " + qntPacote)
+
+        //8
+        var m2 = parseFloat(prompt("Digite a quantidade de metros do comodo: "))
+        
+    function getPackges(m2){
+        console.log(m2)
+        var tin = m2/50 
+        console.log(tin)
+
+        var tin1 = Math.round(m2)
+        console.log(tin)
+
+
+         if ((tin1 - tin) < 0 ) {
+
+             tin = tin1 + 1
+
+         }
+         else {
+             tin = tin1 
+
+         }
+         return tin
+
+     }
+
+    var r = getPackges(m2);
+    document.write("foram usadas: " + r + " latas")
+       
+	</script>
+</html>
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

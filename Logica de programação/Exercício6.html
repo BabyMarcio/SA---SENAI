@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 6</title>
+    <script>
+    //1
+    var n1 =  parseInt(prompt("Digite o 1º valor aqui: "))
+    var n2 = parseInt(prompt("Digite o 2º valor aqui:"))
+    if(n1 == n2){
+        alert("Números iguais!")
+        document.write("Números iguais!")
+    } else if (n1 > n2){
+        alert(n1 + " é maior que " + n2)
+        document.write(n1 + " é maior que " + n2)
+    } else if (n2 > n1){
+        alert(n2 + " é maior que " + n1)
+        document.write(n2 + "é maior que " + n1)
+    }
+
+    //2
+    var p1 = parseInt(prompt("Nota 1: "))    
+    var p2 = parseInt(prompt("Nota 2: "))
+    var media = (p1 + p2) /2
+
+    if(p1 > p2)
+    {
+        var dobro = p1 *2
+        var quadrado = p2*p2
+    } else {
+
+        var dobro = p2*2
+        var quadrado = p1*p1
+    }       
+
+   document.write("A média dos números é: " + media + "</br>" + "O quadrado do menor: " + 
+   quadrado + "</br>" + "O dobro do maior: " + dobro + "</br>" + "</br>") 
+
+   console.log("A média dos números é: " + media + "</br>" + "O quadrado do menor: " +
+    quadrado + "</br>" + "O dobro do maior: " + dobro + "</br>" + "</br>")
+    
+    //3
+	var valor = parseFloat(prompt("Informe um valor: ")); 
+
+	if(valor >=0 && valor <= 25){
+		alert("Intervalo (0,25]")
+	} else if(valor >25 && valor <=50){
+		alert("Intervalo (25,50]")
+	} else if(valor >50 && valor <=75){
+		alert("Intervalo (50,75]")
+	} else if(valor >75 && valor <=100){
+		alert("Intervalo (75,100]")
+	} else {
+		alert("Fora do intervalo!")
+	}
+
+	4
+	var valor1 = parseFloat(prompt("Informe o primeiro valor:"));
+	var valor2 = parseFloat(prompt("Informe o segundo valor:"));
+	
+	if (valor1 % valor2 == 0 || valor2 % valor1 ==0)
+	{
+		alert("São multiplos.")
+	} else {
+		alert("Não são multiplos.")
+	}
+
+	//5
+	var salario = parseInt(prompt("Digite o salário atual:"));
+
+	if(salario <= 400.00)
+	{
+		perc = 0.15
+	} else if (salario <= 800.00){
+		perc = 0.12
+	} else if (salario <= 1200.00){
+		perc = 0.10
+	}else if (salario <= 2000.00){
+		perc = 0.07
+	} else {perc = 0.04}
+	
+	reajuste = salario * perc
+	nSalario = salario + reajuste
+
+	document.write("Novo salário: " + nSalario + "</br>" + "Reajuste Ganho: " + reajuste + "</br>" + "Em Percentual: " + perc + "</br>")
+
+    //6
+    var entrada1 = prompt("vertebrado ou invertebrado")
+			var entrada2 = "", entrada3 = "";
+			if(entrada1 == "vertebrado"){
+				entrada2 = prompt("ave ou mamífero");
+				if(entrada2 == "ave"){
+					entrada3 = prompt("carnivoro ou onívoro");
+					if(entrada3 == "carnivoro"){
+						alert("águia")
+					}else{//onívoro
+						alert("pomba");
+					}
+				}else{//mamífero
+					entrada3 = prompt("onívoro ou herbívoro");
+					if(entrada3 == "onívoro"){
+						alert("homem");
+					}else{//herbívoro
+						alert("vaca");
+					}
+				}
+			}else{//invertebrado
+				entrada2 = prompt("inseto ou anelídeo");
+				if(entrada2 == "inseto"){
+					entrada3 = prompt("hematofago ou herbívoro");
+					if(entrada3 == "hematofago"){
+						alert("pulga");
+					}else{
+						alert("lagarta");
+					}
+				}else{//anelídeo
+					entrada3 = prompt("hematofago ou onívoro");
+					if(entrada3 == "hematofago"){
+						alert("sanguessuga");
+					}else{//onívoro
+						alert("minhoca");
+					}
+				}
+			}			
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 5</title>
+
+    <script>
+    
+
+        //1
+        var p1 = parseInt(prompt("Digite 1ª nota: "))
+        var p2 = parseInt(prompt("Digite 2ª nota: "))
+        var m = (p1 + p2) /2
+
+        if(m >= 6.0)
+        {
+            alert("Aprovado")
+        }
+
+        //2
+        var p1 = parseInt(prompt("Digite 1ª nota: "))
+        var p2 = parseInt(prompt("Digite 2ª nota: "))
+        var m = (p1 + p2) /2
+
+        if(m >= 6.0)
+        {
+            alert("Aprovado")
+        } else{
+            alert("Reprovado")
+        }
+
+        //3
+        var p1 = parseInt(prompt("Digite 1ª nota: "))
+        var p2 = parseInt(prompt("Digite 2ª nota: "))
+        
+        var m = (p1 + p2) /2
+        
+
+        if(m >= 6.0)
+        {
+            alert("Aprovado")
+        } else{
+            alert("Exame")
+            var ex = parseInt(prompt("Nota do exame: "))
+            var mx = (m + ex) /2
+            if(mx >= 6.0)
+            {
+                alert("Aprovado")
+            } else{
+                alert("Reprovado")
+            }
+            
+        }
+
+        //4
+        var p1 = parseInt(prompt("Digite um Número: "))
+
+        if(p1 == 0 )
+        {
+            alert("Número igual a 0")
+        }
+
+        if(p1 > 0)
+        {
+            alert("Número Positivo")
+        }
+
+        if(p1 < 0 )
+        {
+            alert("Número Negativo")
+        }
+
+        //5
+        var n1 = parseFloat(prompt("DIgite primeiro número: "))
+        var n2 = parseFloat(prompt("DIgite segundo número: "))
+
+        if(n1 > n2)
+        {
+            alert("O maior número entre " + n1 + " e " + n2 + " é " + n1)
+        } else{
+            alert("O maior número entre " + n1 + " e " + n2 + " é " + n2)
+        }
+
+        //6
+            var sex = prompt("Digite seu sexo:")
+            if(sex == "m")
+            {
+                alert("Você é um homem!")
+                console.log("Você é um homem!")
+                document.write("Você é um homem!")
+
+            } 
+             
+            if(sex == "f")
+            {
+                alert("Você é uma mulher!")
+                document.write("Você é uma mulher!")
+                console.log("Você é uma mulher!")
+            }
+
+            if (sex != "m" && sex != "f")
+            {
+                alert("Você não trasa!")
+            }
+            
+        //7
+        var idade = parseInt(prompt("Digite sua idade: "))
+         if(idade <= 10)
+         {
+            alert("Infantil!")
+            document.write("Infantil!")
+         } 
+         if(idade == 13 || idade == 12 || idade == 11)
+         {
+             alert("Infanto Juvnil")
+             document.write("Infanto Juvnil")
+         }
+         if(idade == 14 || idade == 15 || idade == 16 || idade == 17 || idade == 18)
+         {
+             alert("Infanto Juvenil")
+             document.write("Infanto Juvenil")
+         }
+         if(idade > 18)
+         {
+             alert("Adulto")
+             document.write("Adulto")
+         }
+
+
+              
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

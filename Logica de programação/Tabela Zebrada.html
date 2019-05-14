@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .zebraon{background:pink}
+  </style>
+  <script>
+  window.onload=function(){
+    var zebrar=document.querySelectorAll('.zebra tbody tr')
+    for(var i=0;i<zebrar.length;i+=2)
+      zebrar[i].className='zebraon'
+  }
+  </script>
+  </head>
+   
+  <body>
+      <table class="zebra">
+        <thead><tr>
+            <th>Pessoa</th> <th>Total De patrimonio Acumulado</th>
+              </tr></thead>
+        <tbody><tr>
+            <td>BETINA</td>   <td>R$1.000.000,01</td>
+            </tr><tr>
+              <td>Marco</td>  <td>R$21.300,00</td>
+            </tr><tr>
+              <td>Marcio Junior</td>   <td>R$13.200,00</td>
+            </tr><tr>
+              <td>Sabrina</td>    <td>R$32.100,00</td>
+            </tr><tr>
+              <td>Gzebel</td>  <td>R$23.100,00</td>
+            </tr><tr>
+              <td>Paulo</td>    <td>R$31.200,00</td>
+          </tr></tbody>
+          
+  </table>
+</body>
+</html>
